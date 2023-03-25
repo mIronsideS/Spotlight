@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spot-fucking-light</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <HEAder style="background-color: black; ">
+
+    </HEAder>
+    <div id="navbar">
+
+        <a href="#default" id="logo"><img src="spotlight-logo.jpg" alt="" class="logo-image"></a>
+        <div id="navbar-right">
+            <div class="myLinks">
+                <a class="active" href="index.html">HOME</a>
+                <a href="services.html">SERVICES</a>
+                <a href="what-is-spotlight.html">WHAT IS SPOTLIGHT?</a>
+                <a href="about-us.html">ABOUT US</a>
+                <a href="get-involved.html">GET INVOLVED</a>
+                <a href="contact-us.html">CONTACT US</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="first-image">
+
+
+        <div class="background-image">
+            <!-- <img src="rs=w:1920,m.jpg" alt=""> -->
+            <h3 class="text-1">
+                "There is always help. There is always a way out."
+
+            </h3>
+            <p class="text-2">
+                -Rev. Donna Mulvey
+            </p>
+            <div>
+                <a href="https://animated-axolotl-1a1b63.netlify.app">
+                    <button class="get-help button">GET HELP</button>    
+                </a>
+                
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="second-grid">
+        <div class="flag-image">
+            <img src="inclusivity.jpg" alt="inclusivity" class="inclusivity">
+        </div>
+        <div class="content-second-grid">
+            <h3 class="spotlight-question">
+                WHO IS SPOTLIGHT FOR?
+            </h3>
+            <p class="spotlight-for">
+                We provide free-of-cost services for victims of abuse all over India. The victims that come forward
+                seeking help from our service could come from all walks of life. Regardless of your gender, sexual
+                orientation, religion or culture, all service users are treated equally and with the utmost respect and
+                care.
+            </p>
+        </div>
+
+    </div>
+    <div class="third-content-block">
+        <div>
+            <h3 class="our-values">
+                OUR VALUES
+            </h3>
+        </div>
+        <div>
+            <img src="woman-child-joy.jpeg" alt="woman-child-joy" class="woman-child-joy">
+        </div>
+        <p class="values">
+            <b>Our service prides itself in treating our service users with unconditional compassion, respect and care.
+                However, the values we aim to maintain as a non-profit service are inclusion, consistency and most
+                importantly confidentiality. We understand how difficult it can be to come forward and seek help for
+                abuse and hence <span>confidentiality is given paramount significance</span>.</b>
+        </p>
+    </div>
+    <div class="navigate-to">
+        
+            <div class="mobile-links">
+                <a class="active" href="index.html">HOME</a><br>
+                <a href="services.html">SERVICES</a><br>
+                <a href="what-is-spotlight.html">WHAT IS SPOTLIGHT?</a><br>
+                <a href="about-us.html">ABOUT US</a><br>
+                <a href="get-involved.html">GET INVOLVED</a><br>
+                <a href="contact-us.html">CONTACT US</a><br>
+            </div>
+        
+    </div>
+    <div class='fourth-form-block' style="display: none;">
+        <h3 class="community">
+            WHEN YOU CHOOSE US, YOU CHOOSE A COMMUNITY!
+        </h3>
+
+        <div>
+            <form onsubmit="return false">
+            </form>
+            <input type="text" placeholder="Enter your last name" id="lastName" />
+<br><br>
+<input type="text" placeholder="Enter your first name" id="firstName" />
+<input type="radio" id="male" name="gender" value="male"> Male
+<input type="radio" id="female" name="gender" value="female"> Female
+<br><br>
+<input type="email" placeholder="Enter your email" id="email" />
+<input type="text" placeholder="Address" id="address" />
+    
+<input type="text" placeholder="House number" id="houseNumber" />
+   
+<select id="country">
+ <option disabled selected value> -- select a country -- </option>
+ <option value="Narnia">Narnia</option>
+ <option value="Neverland">Neverland</option>
+ <option value="Vulcan">Vulcan</option>
+</select>
+<br><br>
+<option disabled selected value> -- select a country -- </option>
+<input type="password" placeholder="Enter password" id="password" />   
+<input type="password" placeholder="Enter password (check)" id="passwordCheck" />
+<br><br>
+<input type="checkbox" id="newsletter" />Send me monthly newsletter
+<br><br>
+<span>What is your question?</span>
+<br>
+<textarea id="question" rows="4"></textarea>
+<br><br>
+<button onclick="sendContact();">Send contact</button>
+<script>
+    let genderValue = male.checked ? "male" : "female"
+    function getGender() {
+ return document.querySelector('input[name="gender"]:checked')
+}
+document.addEventListener("DOMContentLoaded", function() {
+ fields.firstName = document.getElementById('firstName');
+ fields.lastName = document.getElementById('lastName');
+ fields.email = document.getElementById('email');
+ fields.address = document.getElementById('address');
+ fields.houseNumber = document.getElementById('houseNumber');
+ fields.country = document.getElementById('country');
+ fields.password = document.getElementById('password');
+ fields.passwordCheck = document.getElementById('passwordCheck');
+ fields.newsletter = document.getElementById('newsletter');
+ fields.question = document.getElementById('question');
+})
+function isNotEmpty(value) {
+ if (value == null || typeof value == 'undefined' ) return false;
+ return (value.length > 0);
+}
+function isNumber(num) {
+ return (num.length > 0) && !isNaN(num);
+}
+function isEmail(email) {
+ let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+ return regex.test(String(email).toLowerCase());
+}
+function isPasswordValid(password) {
+ if (password.length > 5) {
+ return true;
+ }
+ return false
+}
+function fieldValidation(field, validationFunction) {
+ if (field == null) return false;
+
+ let isFieldValid = validationFunction(field.value)
+ if (!isFieldValid) {
+ field.className = 'placeholderRed';
+ } else {
+ field.className = '';
+ }
+
+ return isFieldValid;
+}
+function isValid() {
+ var valid = true;
+ 
+ valid &= fieldValidation(fields.firstName, isNotEmpty);
+ valid &= fieldValidation(fields.lastName, isNotEmpty);
+ valid &= fieldValidation(fields.gender, isNotEmpty);
+ valid &= fieldValidation(fields.address, isNotEmpty);
+ valid &= fieldValidation(fields.country, isNotEmpty);
+ valid &= fieldValidation(fields.email, isEmail);
+ valid &= fieldValidation(fields.houseNumber, isNumber);
+ valid &= fieldValidation(fields.password, isPasswordValid);
+ valid &= fieldValidation(fields.passwordCheck, isPasswordValid);
+ valid &= fieldValidation(fields.question, isNotEmpty);
+ valid &= arePasswordsEqual();
+
+ return valid;
+}
+function arePasswordsEqual() {
+ if (fields.password.value == fields.passwordCheck.value) {
+ field.password.className = 'placeholderRed';
+ field.passwordCheck.className = 'placeholderRed';
+ return true;
+ }
+ return false
+}
+class User {
+ constructor(firstName, lastName, gender, address, country, email, newsletter, question) {
+ this.firstName = firstName;
+ this.lastName = lastName;
+ this.gender = gender;
+ this.address = address;
+ this.country = country;
+ this.email = email;
+ this.newsletter = newsletter;
+ this.question = question;
+ }
+}
+class User {
+ constructor(firstName, lastName, gender, address, country, email, newsletter, question) {
+ this.firstName = firstName;
+ this.lastName = lastName;
+ this.gender = gender;
+ this.address = address;
+ this.country = country;
+ this.email = email;
+ this.newsletter = newsletter;
+ this.question = question;
+ }
+}
+</script>
+
+
+
+
+
+
+        </div>
+
+    </div>
+    <div class="fifth-social-media" style="display: none;">
+        <h3>
+            Connect With US
+        </h3>
+        <br>
+        <span>
+            <a href="https://www.instagram.com/the.spotlightindia?igshid=YmMyMTA2M2Y="><img src="icons8-instagram.gif"
+                    alt="" class="ig"></a>
+
+        </span>
+
+    </div>
+    <div class="sixth-policy">
+        <a href="https://www.instagram.com/the.spotlightindia?igshid=YmMyMTA2M2Y="><img src="icons8-instagram.gif"
+                alt="" class="ig"></a>
+        
+        <p>
+            <a href="Privacy-Notice.pdf">PRIVACY POLICY</a> &nbsp;&nbsp; <a href="Volunteer-Policy.pdf">VOLUNTEERING
+                WITH US</a>
+        </p>
+    </div>
+
+
+
+</body>
+
+</html>
