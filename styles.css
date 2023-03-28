@@ -99,6 +99,7 @@ body {
 
 @media screen and (max-width: 580px) {
   #navbar {
+   
     padding: 20px 10px !important;
   }
 
@@ -115,7 +116,7 @@ body {
 
 #navbar-right a {
   font-size: 10px;
-  margin-top: 5px;
+  margin: 5px;
   font-weight: 900;
 }
 
@@ -236,7 +237,7 @@ h3 {
   /* margin: 20px 310px 20px 250px; */
   padding: 5%;
   text-align: center;
-  padding-bottom: 40px;
+  margin-bottom: 5vh;
 
 }
 
@@ -504,5 +505,34 @@ a {
   h3{
 
   }
+  .flag-image img{
+    margin-top: 0px;
+  }
+  .navigate-to .mobile-links a{
+    color: white;
+    font-family: 'Fjalla One';
+    font-weight: 900;
+    /* font-size: 18px; */
+    /* font-style:bold; */
+    line-height: 35pt;
+    padding: 1vh;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 2vh;
+    font-family: 'fjalla one';
+    font-weight: 400;
+    text-decoration: none; 
+    font-style: normal;
+    line-height: 6vh;
+    margin: 1vh;
+  }
+}
 
+.myLinks{
+  margin-top: 1vh;
+  /* margin-bottom: -100px; */
+}
+p{
+  font-size: larger;
+  margin: 0px 5%;
 }

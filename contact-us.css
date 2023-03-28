@@ -269,6 +269,13 @@ button:hover{
     padding: 1vh;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 2vh;
+    font-family: 'fjalla one';
+    font-weight: 400;
+    text-decoration: none; 
+    font-style: normal;
+    line-height: 6vh;
+    margin: 1vh;
   }
   .mobile-links{
     font-size: 13px;
@@ -290,4 +297,11 @@ button:hover{
   .quote-cj{
     margin: 5px;
   }
+  }.myLinks{
+    margin-top: 1vh;
+    /* margin-bottom: -100px; */
+  }
+  #navbar-right a{
+    margin: 0.5vh;
+    margin-top: 15px;
   }

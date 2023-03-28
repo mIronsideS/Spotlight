@@ -17,6 +17,7 @@ function scrollFunction() {
   } else {
     navbar.style.padding = "8px 5px";
     logo.style.fontSize = "35px";
+    logo.style.opacity="1"
     logoImage.style.height = "15vh";
     navbar.style.backgroundColor='transparent';
     navbar.style.color='black';

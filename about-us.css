@@ -1,4 +1,328 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');    
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap');
+header {
+    width: 100%;
+    height: 10vh;
+
+    
+}
+li a{
+ text-decoration: none;       
+}
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+nav.black ul {
+    background: #000;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+li a{
+    font-size:10px;
+    color: white;
+}
+nav ul li a {
+    letter-spacing: 2px;
+}
+
+/* nav{
+    display: flex;
+    flex-direction:row ;
+    justify-content: flex-end;
+} */
+
+.logo-img {
+    margin-right: 80vw;
+}
+a {
+    text-decoration: underline;
+    color: #000;
+}
+body{
+    background-color: black;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+h3 {
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: xx-large;
+    text-transform: uppercase;
+
+}
+.content{
+    background-color: #b9e6c3;
+}
+.content-text {
+    padding-bottom: 20px;
+}
+.sixth-policy {
+    background-color: black; 
+    padding: 30px 0px;
+    margin: -10px; 
+    /* align-items: center; */
+    text-align: center;   
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+}
+.sixth-policy>p>a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h4{
+    text-transform: uppercase;
+    font-family: 'fjalla one',sans-serif;
+    font-size: x-large;
+}
+.wrapper{
+    background-color: black;
+}
+/* ul{
+    margin-top: -100px;
+} */
+.ig {
+    background: #B9E6C3;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+.content{
+    padding: 10px 130px  ;
+    margin-bottom: 10px;
+}  
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.child{
+    height: 610px;
+    margin-top: 22vh;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #b9e6c3;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: transparent;
+    padding: 90px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
+  .white{
+    color: white;
+    /* padding: 25px; */
+    text-align: center;
+    font-family : "Source Sans Pro", arial, sans-serif;
+    font-size : 20px;
+    /* line-height : 36px; */
+    text-decoration : rgb(247, 247, 247);
+    text-align : center;
+    font-weight: 500;
+    word-spacing : 0px;
+    margin-bottom: 40px;
+  }
+  
+  .quote {
+    font-family: "Fjalla One", arial, sans-serif;
+    color: white;
+    font-size: 10vh;
+    word-break:normal;
+    padding: 0px 100px;
+    margin-top: 50vh;
+  
+  }
+  
+  #navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  #navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  
+  #navbar a:hover {
+    background-color: #50C878;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #50C878;
+    color: white;
+  }
+  
+  #navbar-right {
+    float: right;
+  }
+  
+  .logo-image {
+    height: 70px;
+    transition: 0.4s;
+  }
+  
+  .first-image-para img {
+    /* background-image: url(woman-man.jpg); */
+    object-fit:cover;
+    width: 100vw;
+    margin-bottom: -150px;
+    height: 100vh;
+  
+  }
+  
+  .fjalla {
+    text-align: center;
+    margin-top: -50vh;
+  }
+  
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important;
+    }
+  
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+    #navbar-right {
+      float: none;
+    }
+  }
+  
+  #navbar-right a {
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: 900;
+  }
+  
+  .container{
+    height:500px;
+    overflow: hidden;
+  }
+  .shrink-on-scroll {
+    height: auto; /* set the height of the image to auto so it can shrink */
+    transition: transform 0.2s ease-in-out; /* add a transition effect to the transform property */
+  }
+  
+  .shrink-on-scroll.shrink {
+    transform: scale(0.8); /* scale the image to 80% of its original size */
+  }
+  .navigate-to{
+    display: none;
+  }
+  @media screen and (max-width: 768px){
+    #navbar, header{
+      display: none;
+    }
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+    .navigate-to{
+      display: block;
+      background-color: black;
+      padding: 10%;
+      text-align: center;
+    }
+    .navigate-to .mobile-links a{
+      color: white;
+      font-family: 'Source Sans Pro';
+      font-weight: 900;
+      
+      font-style:bold;
+      line-height: 35pt;
+      padding: 1vh;
+      border-radius: 5px;
+    }
+    .active{
+      margin: 10vh;
+      background-color: #50C878;
+      text-decoration: none;
+    }
+    .content{
+      padding: 2%;
+    }
+    .child{
+      /* max-width: 100%;
+      margin: 0px;
+      height: 80%;
+       */
+       /* margin: 0vh 10vw 0vh 0vw ; */
+       max-width: 100%;
+       max-height: 50vh;
+       margin-top: 5vh;
+    }
+     .child-flex{
+      /* max-width: 100%; */
+      max-width: 100%;
+
+      
+    
+    } 
+    /* .content-second-grid{
+      /* display: flex; */
+      /* flex-direction: column; */
+    /* } */ 
+    
+  }
+  #navbar-right a{
+    margin: 0.5vh;
+    margin-top: 15px;
+  }
+  /* p{
+    font-size: larger;
+    margin: 0px 5%;
+  } */
+
+a{
+  text-transform: uppercase;
+  font-style: bold;
+  font-weight: 800;
+}
 * {
     box-sizing: border-box;
   }
@@ -180,7 +504,10 @@ border-radius: 3vw;
 .navigate-to{
   display: none;
 }
-  
+.myLinks{
+  margin-top: 1vh;
+  /* margin-bottom: -100px; */
+}
   @media screen and (max-width: 580px) {
     #navbar {
       padding: 20px 10px !important;
@@ -206,6 +533,9 @@ border-radius: 3vw;
   .container{
     height:500px;
     overflow: hidden;
+  }
+  .c p{
+    font-size: medium; line-height: 20pt;
   }
   .shrink-on-scroll {
     height: auto; /* set the height of the image to auto so it can shrink */
@@ -316,3 +646,150 @@ border-radius: 3vw;
     font-size: 13px;
   }
   }
+  /* .myLinks{
+    margin-top: 1vh;
+    /* margin-bottom: -100px; */
+   */
+  #navbar-right a{
+    margin: 0.5vh;
+    margin-top: 15px;
+  }
+  .text p{
+    margin: 0 5vw;
+  }
+  body{
+    
+  }
+  .flex-item p{
+    flex-basis: 60%;
+  }
+  .flex-item{
+    justify-content: space-around;
+  }
+  .flex-item img{
+    border-radius: 2%;
+  }
+@media screen and  (max-width:1024px) {
+    #navbar{
+      display: none;
+
+    }
+    .flex-item p{
+      font-weight: 400;
+      font-family: 'Fjalla One', sans-serif;
+      /* word-spacing: 1px; */
+      line-height:3vh;
+      /* line-break: 20px; */
+      font-size: 2vh;
+      padding: 5px;
+  }
+  .flex-item{
+    flex-direction: column;
+    /* padding-top: 5vh; */
+
+  }
+  .text p{
+    padding: 2vh;
+  }
+  header{
+    display: none;
+  }
+  .navigate-to{
+    display: block;
+  }
+  .navigate-to{
+    display: block;
+    background-color: black;
+    padding: 10%;
+    text-align: center;
+  }
+  .navigate-to .mobile-links a{
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    
+    font-style:bold;
+    line-height: 35pt;
+    padding: 1vh;
+    border-radius: 5px;
+  }
+  .mobile-links{
+    font-size: 1vh; line-height: 3vh; font-family: 'fjalla one'; text-decoration: none;
+  }
+  .text-right{
+    flex-direction: column-reverse;
+  }
+  .oc h3{
+    font-size: 2vh;
+  }
+  .collaborators h3{
+    font-size: 4vh;
+  }
+  .c-name{
+    font-size: 3vh;
+    line-height: 4vh;
+    padding-bottom: 0px;
+  }
+  .c{
+    /* padding: 0px; */
+    margin: 0px;
+  }
+  .c p{
+    font-family: 'source sans pro' sans-serif;
+    font-size: 350%;
+    line-height: 120%;
+    padding: 0vh 5vh 5vh 5vh;
+    text-align: start;
+    font-style: bold;
+    font-weight: 300;
+    /* left: 0; */
+  }
+  .mobile-links a{
+    text-decoration: none;
+  }
+  .active{
+    background-color: #50C878;
+    border-radius: 5px;
+    padding: 1vh;
+  }
+
+  .mobile-links a{
+    
+    /* color: red; */
+  }
+  .navigate-to .mobile-links a{
+    font-size: 2vh;
+    font-weight: 400;
+    
+    font-style: normal;
+    line-height: 6vh;
+    margin: 1vh;
+    
+      color: white;
+      font-family: 'Fjalla One';
+      font-weight: 900;
+      /* font-size: 18px; */
+      /* font-style:bold; */
+      line-height: 35pt;
+      padding: 1vh;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 2vh;
+      font-family: 'fjalla one';
+      font-weight: 400;
+      text-decoration: none; 
+      font-style: normal;
+      line-height: 6vh;
+      margin: 1vh;
+    }
+  }
+  
+  .ig{
+    height: 5vh;
+  }
+  .sixth-policy p a{
+    font-size: 2vh;
+    font-weight: 400;
+    color: #B9E6C3;
+  }
+ 

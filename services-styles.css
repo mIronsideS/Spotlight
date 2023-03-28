@@ -95,6 +95,7 @@ header {
 h4{
     text-transform: uppercase;
     font-family: 'fjalla one',sans-serif;
+    font-size: x-large;
 }
 .wrapper{
     background-color: black;
@@ -254,6 +255,9 @@ h4{
     #navbar, header{
       display: none;
     }
+    .mobile-links a{
+      text-decoration: none;
+    }
     .flex-container{
       display: flex;
       justify-content: center;
@@ -301,10 +305,44 @@ h4{
       
     
     } 
+    .navigate-to .mobile-links a{
+      color: white;
+      font-family: 'Fjalla One';
+      font-weight: 900;
+      /* font-size: 18px; */
+      /* font-style:bold; */
+      line-height: 35pt;
+      padding: 1vh;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 2vh;
+      font-family: 'fjalla one';
+      font-weight: 400;
+      text-decoration: none; 
+      font-style: normal;
+      line-height: 6vh;
+      margin: 1vh;
+    }
+    a{
+      font-family: 'Fjalla one';
+    }
     /* .content-second-grid{
       /* display: flex; */
       /* flex-direction: column; */
     /* } */ 
     
   }
-  
+  #navbar-right a{
+    margin: 0.5vh;
+    margin-top: 15px;
+  }
+  /* p{
+    font-size: larger;
+    margin: 0px 5%;
+  } */
+
+a{
+  text-transform: uppercase;
+  font-style: bold;
+  font-weight: 800;
+}

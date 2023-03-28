@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap');
 
 * {
   box-sizing: border-box;
@@ -204,6 +204,10 @@ header {
   #navbar, header{
     display: none;
   }
+  .sixth-policy p a{
+    color: #B9E6C3;
+  }
+ 
   .flex-container{
     display: flex;
     justify-content: center;
@@ -289,4 +293,26 @@ body{
 .hcigi{
   font-size: 25px;
 }
+.navigate-to .mobile-links a{
+  color: white;
+  font-family: 'Fjalla One';
+  font-weight: 900;
+  /* font-size: 18px; */
+  /* font-style:bold; */
+  line-height: 35pt;
+  padding: 1vh;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2vh;
+  font-family: 'fjalla one';
+  font-weight: 400;
+  text-decoration: none; 
+  font-style: normal;
+  line-height: 6vh;
+  margin: 1vh;
+}
+}
+#navbar-right a{
+  margin: 0.5vh;
+  margin-top: 15px;
 }
