@@ -535,7 +535,7 @@ border-radius: 3vw;
     overflow: hidden;
   }
   .c p{
-    font-size: medium; line-height: 20pt;
+    font-size: 3vh; line-height: 20pt; font-weight: 600;
   }
   .shrink-on-scroll {
     height: auto; /* set the height of the image to auto so it can shrink */
